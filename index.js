@@ -20,13 +20,13 @@ const heroImage = document.createElement("img");
 heroImage.src = "https://pngicon.ru/file/uploads/2_23.png";
 
 const eggImage = document.createElement("img");
-eggImage.src = "https://pngimage.net/wp-content/uploads/2018/06/%D1%8F%D0%B9%D1%86%D0%BE-%D0%BA%D1%83%D1%80%D0%B8%D0%BD%D0%BE%D0%B5-png-4.png";
+eggImage.src = "https://png.pngtree.com/element_our/20190530/ourmid/pngtree-correct-icon-image_1267804.jpg";
 
 const blackEggImage = document.createElement("img");
 blackEggImage.src = "https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/solid-easter-egg-sticker-13331-20896-300x300.png";
 
 const goldenEggImage = document.createElement("img");
-goldenEggImage.src = "https://pngimage.net/wp-content/uploads/2018/05/egg-png-1.png";
+goldenEggImage.src = "https://www.liblogo.com/img-logo/wh491wad6-whatsapp-icon-logo-whatsapp-icon-whatsapp-logo-call-logo-instagram-logo-new.png";
 
 const result = document.querySelector("#result");
 const win = document.querySelector("#win");
