@@ -14,19 +14,19 @@ const canvas = document.querySelector("canvas");
 const context = canvas.getContext("2d");
 
 const backgroundImage = document.createElement("img");
-backgroundImage.src = "https://cdnb.artstation.com/p/assets/images/images/002/268/125/large/razmig-mavlian-chickencoopbackground-all.jpg?1459518171";
+backgroundImage.src = "img/background.jpg";
 
 const heroImage = document.createElement("img");
-heroImage.src = "https://pngicon.ru/file/uploads/2_23.png";
+heroImage.src = "img/box.png";
 
 const eggImage = document.createElement("img");
-eggImage.src = "https://png.pngtree.com/element_our/20190530/ourmid/pngtree-correct-icon-image_1267804.jpg";
+eggImage.src = "img/egg.png";
 
 const blackEggImage = document.createElement("img");
-blackEggImage.src = "https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/solid-easter-egg-sticker-13331-20896-300x300.png";
+blackEggImage.src = "img/black_egg.png";
 
 const goldenEggImage = document.createElement("img");
-goldenEggImage.src = "https://www.liblogo.com/img-logo/wh491wad6-whatsapp-icon-logo-whatsapp-icon-whatsapp-logo-call-logo-instagram-logo-new.png";
+goldenEggImage.src = "img/golden_egg.png";
 
 const result = document.querySelector("#result");
 const win = document.querySelector("#win");
@@ -74,7 +74,7 @@ function update() {
      if (data.eggs.length <= 2) {
     data.eggs.push({
       yDelta: 1,
-      x: Math.random() * (canvas.width - 35),
+      x: Math.random() * (canvas.width - 35) + 200,
       y: 0,
       width: 35,
       height: 35
@@ -106,7 +106,7 @@ function update() {
      if (data.blackEggs.length <= 3) {
     data.blackEggs.push({
       yDelta: 1.5,
-      x: Math.random() * (canvas.width - 35),
+      x: Math.random() * (canvas.width - 35) + 200,
       y: 0,
       width: 35,
       height: 35
@@ -138,7 +138,7 @@ function update() {
      if (data.goldenEggs.length === 0) {
     data.goldenEggs.push({
       yDelta: 2,
-      x: Math.random() * (canvas.width - 35),
+      x: Math.random() * (canvas.width - 35) + 200,
       y: 0,
       width: 35,
       height: 35
@@ -168,7 +168,7 @@ function update() {
 }	
 
 function draw() {
-  context.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height)
+  context.drawImage(backgroundImage, 200, 0, canvas.width, canvas.height)
 
   context.drawImage(heroImage, data.hero.x, data.hero.y, data.hero.width, data.hero.height);
 
